@@ -31,7 +31,7 @@ factorial(20)
  ---------
  */
 
-// We can not use `Int` as that will casue arithmatic overflow for number >= 21, can we use String?
+// We can not use `Int` as that will casue arithmetic overflow for number >= 21, can we use String?
 
 enum MultiplicationError: Error {
     case invalidInput

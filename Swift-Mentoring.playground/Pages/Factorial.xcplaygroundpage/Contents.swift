@@ -17,7 +17,7 @@ func factorial(_ number: Int) -> Int {
     return number * factorial(number-1)
 }
 
-factorial(21)
+factorial(20)
 
 /*
  Let's take an example of Multiplication for numbers 123 and 10

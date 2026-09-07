@@ -9,7 +9,7 @@ extension String {
     func isPangram() -> Bool {
         guard count >= 26 else { return false }
         
-        let text = self.lowercased().filter { $0 >= "a" && $0 <= "z" }
+        let text = self.lowercased().filter { $0.isLetter }
         
         // Dictionary (key, value)
 //        var dictionary: [Character: Bool] = [:]

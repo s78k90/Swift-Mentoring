@@ -22,7 +22,7 @@ func NQueen(board: [[Int]], queenNumber: Int) -> Int {
             let rowDiffernce = queenNumber - row
             let columnDifference = lastQueenColumn - column
             
-            if abs(rowDiffernce) == abs(columnDifference) {
+            if rowDiffernce == abs(columnDifference) {
                 continue loop
             }
         }

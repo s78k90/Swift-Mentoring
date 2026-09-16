@@ -37,7 +37,7 @@ let s2 = Array("Kumar")
 let m = s1.count
 let n = s2.count
 
-// memorization
+// memoization
 var memo: [[Int]] = Array(repeating: Array(repeating: -1, count: n+1), count: m+1)
 
 let distance = editDistance(s1, s2, m: m, n: n)

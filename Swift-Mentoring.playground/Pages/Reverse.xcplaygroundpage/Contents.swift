@@ -25,4 +25,19 @@ var newArray = Array(greeting)
 reverse(input: &newArray)
 print(newArray.map { String($0) }.joined())
 
+// Problem 2:
+// Sum of all previous + current element(s) in the Array.
+// Using recursion.
+func sum(for array: inout [Int], index: Int = 0, total: Int = 0) {
+    guard !array.isEmpty else { return }
+    if index < 0 || index >= array.count { return }
+    
+    array[index] += total
+    sum(for: &array, index: index+1, total: array[index])
+}
+
+var elements = [1, 12, -3, 4, 21, -42, 78, -4, 89]
+sum(for: &elements)
+print(elements)
+
 //: [Next](@next)
